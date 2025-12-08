@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from '@emotion/styled'
 
 const MainContainer = ({ children} : { children: React.ReactNode }) => {
@@ -13,7 +12,7 @@ export default MainContainer
 
 const Container = styled.div`
     width: 100%;
-    max-width: 1640px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 `

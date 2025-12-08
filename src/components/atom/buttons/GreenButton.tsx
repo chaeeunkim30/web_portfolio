@@ -1,5 +1,4 @@
 import styled from '@emotion/styled'
-import React from 'react'
 
 interface GreenButtonProps {
     children: React.ReactNode;
@@ -18,7 +17,7 @@ export default GreenButton
 
 const Buttons = styled.button`
     width: 100%;
-    padding: 14px;
+    padding: 12px;
     background: var(--green-100);
     color: #000;
     border-radius: 4px;

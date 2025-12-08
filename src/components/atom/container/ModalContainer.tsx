@@ -1,4 +1,3 @@
-import React from "react"
 import styled from "@emotion/styled"
 
 const ModalContainer = ({ children} : { children: React.ReactNode }) => {

@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from "@emotion/styled"
 import GreenButton from '../atom/buttons/GreenButton'
 import type { ProjectType } from '../../data/ProjectList';
@@ -37,7 +36,7 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 400px;
+    height: 330px;
     padding: 20px;
     background: var(--green-300);
     border-radius: 4px;
@@ -45,10 +44,10 @@ const Container = styled.div`
 
 const Title = styled.h3`
     color: #fff;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 700;
     line-height: 140%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 `
 
 const Contents = styled.div`
@@ -58,7 +57,7 @@ const Contents = styled.div`
     width: 100%;
     & > p {
         color: #fff;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 500;
         line-height: 140%;
     }
@@ -67,7 +66,7 @@ const Contents = styled.div`
 const BtnContainer = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
     width: 100%;
     margin-top: auto;
 `

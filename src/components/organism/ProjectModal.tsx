@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import styled from '@emotion/styled';
 import type { ProjectType } from '../../data/ProjectList';
 import ModalContainer from '../atom/container/ModalContainer';

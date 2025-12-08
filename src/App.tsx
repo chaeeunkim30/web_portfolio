@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import styled from '@emotion/styled';
 import ReactFullpage from '@fullpage/react-fullpage';
 import Header from './components/organism/Header';
@@ -220,9 +220,9 @@ const SkillsContents = styled.div`
 const Projects = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin-top: 20px;
-  gap: 30px;
-  max-width: 1620px;
+  margin-top: 10px;
+  gap: 10px;
+  max-width: 1200px;
   width: 100%;
 `
 
@@ -231,7 +231,7 @@ const MoreBtn = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-top: 30px;
+  margin-top: 10px;
   & > a {
     display: flex;
     align-items: center;
