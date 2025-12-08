@@ -15,6 +15,7 @@ body {
   background-color: #9CB0A3;
   font-family: var(--fn-suit);
   font-family: 'SUIT' !important;
+  word-break: keep-all;
 }
 
 span,

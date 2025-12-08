@@ -1,11 +1,22 @@
 import React from 'react'
 import styled from '@emotion/styled'
 
+interface FullPageApi {
+  moveTo: (section: string) => void;
+}
+
+interface CustomWindow extends Window {
+  fullpage_api?: FullPageApi;
+}
+
 const Header = () => {
     const handleScroll = (id: string) => {
-        const el = document.getElementById(id);
-        if (el) {
-            el.scrollIntoView({ behavior: "smooth" });
+        const customWindow = window as unknown as CustomWindow;
+
+        if (customWindow.fullpage_api) {
+            customWindow.fullpage_api.moveTo(id);
+        } else {
+            window.location.hash = id; 
         }
     };
   return (
