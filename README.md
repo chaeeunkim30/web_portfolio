@@ -2,7 +2,7 @@
 >
 > 📅 **개발 기간:** 2일
 > 🛠 **작업 범위:** 기획, 디자인, UI 개발 전 과정 (100% 개인 기여)
->> 🔗 **배포 링크:** [https://chaeeunkim30.github.io/web_portfolio](https://chaeeunkim30.github.io)
+>> 🔗 **배포 링크:** [https://chaeeunkim30.github.io/web_portfolio/](https://chaeeunkim30.github.io/web_portfolio/)
 
 <br/>
 
