@@ -122,6 +122,7 @@ const MainTitle = styled.div`
   height: 50vh;
   background: var(--green-300);
   color: #fff;
+  padding: 0 20px;
   & > p {
     font-size: 48px;
     font-weight: 700;
@@ -129,6 +130,22 @@ const MainTitle = styled.div`
   }
   & > span {
     font-size: 40px;
+  }
+  @media all and (max-width: 1024px) {
+    & > p {
+      font-size: 22px;
+    }
+    & > span {
+      font-size: 20px;
+    }
+  }
+  @media all and (max-width: 768px) {
+    & > p {
+      font-size: 20px;
+    }
+    & > span {
+      font-size: 18px;
+    }
   }
 `;
 
@@ -139,12 +156,25 @@ const MainSub = styled.div`
   gap: 20px;
   width: 100%;
   height: 50vh;
+  padding: 0 20px;
   & > span {
     display: block;
     max-width: 280px;
     width: 100%;
     & > img {
       width: 100%;
+    }
+  }
+  @media all and (max-width: 1024px) {
+    flex-direction: column;
+    gap: 8px;
+    & > span {
+      max-width: 190px;
+    }
+  }
+  @media all and (max-width: 768px) {
+    & > span {
+      max-width: 150px;
     }
   }
 `
@@ -163,6 +193,20 @@ const MainContents = styled.div`
     color: #fff;
     background: var(--green-300);
     border-radius: 4px;
+  }
+  @media all and (max-width: 1024px) {
+    gap: 8px;
+    & > p {
+      font-size: 16px;
+      padding: 20px;
+    }
+  }
+  @media all and (max-width: 768px) {
+    gap: 5px;
+    & > p {
+      font-size: 14px;
+      padding: 10px;
+    }
   }
 `
 
@@ -187,6 +231,14 @@ const ButtonGroup = styled.div`
     transition: all 0.3s ease;
     &:hover {
       background: var(--green-300);
+    }
+  }
+  @media all and (max-width: 768px) {
+    gap: 8px;
+    & > a {
+      width: 100px;
+      padding: 8px 0;
+      font-size: 14px;
     }
   }
 `
@@ -215,6 +267,28 @@ const SkillsContents = styled.div`
       }
     }
   }
+  @media all and (max-width: 1024px) {
+    gap: 15px;
+    & > .imgs {
+      gap: 20px;
+      margin-bottom: 30px;
+      & > span {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+  @media all and (max-width: 768px) {
+    gap: 10px;
+    & > .imgs {
+      gap: 15px;
+      margin-bottom: 20px;
+      & > span {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
 `
 
 const Projects = styled.div`
@@ -224,6 +298,10 @@ const Projects = styled.div`
   gap: 10px;
   max-width: 1200px;
   width: 100%;
+  @media all and (max-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
 `
 
 const MoreBtn = styled.div`
@@ -254,6 +332,13 @@ const MoreBtn = styled.div`
         background: var(--green-200);
     }
   }
+  @media all and (max-width: 1024px) {
+    & > a {
+      max-width: 280px;
+      padding: 12px 16px;
+      font-size: 14px;
+    }
+  }
 `
 
 const ContactWrapper = styled.div`
@@ -261,15 +346,24 @@ const ContactWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 80px;
   width: 100%;
   height: 100%;
+  @media all and (max-width: 1024px) {
+    gap: 50px;
+  }
+  @media all and (max-width: 768px) {
+    gap: 30px;
+  }
+  @media all and (max-width: 410px) {
+    gap: 10px;
+  }
 `
 
 const ContactTop = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 600px;
   width: 100%;
   position: relative;
   & > p {
@@ -281,15 +375,39 @@ const ContactTop = styled.div`
   }
   & > span {
     position: absolute;
-    top: 75%;
+    top: 115%;
     left: 50%;
     z-index: 3;
     transform: translate(-50%, -50%);
     display: block;
-    max-width: 250px;
+    max-width: 180px;
     width: 100%;
     & > img {
       width: 100%;
+    }
+  }
+  @media all and (max-width: 1024px) {
+    & > p {
+      font-size: 80px;
+    }
+    & > span {
+      max-width: 120px;
+    }
+  }
+  @media all and (max-width: 768px) {
+    & > p {
+      font-size: 60px;
+    }
+    & > span {
+      max-width: 80px;
+    }
+  }
+  @media all and (max-width: 410px) {
+    & > p {
+      font-size: 48px;
+    }
+    & > span {
+      max-width: 60px;
     }
   }
 `
@@ -299,7 +417,7 @@ const ContactSub = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 10px;
   width: 100%;
   margin-top: 50px;
   & > p {
@@ -308,5 +426,15 @@ const ContactSub = styled.div`
     font-size: 22px;
     font-weight: 500;
     line-height: 140%;
+  }
+  @media all and (max-width: 1024px) {
+    & > p {
+      font-size: 18px;
+    }
+  }
+  @media all and (max-width: 1024px) {
+    & > p {
+      font-size: 16px;
+    }
   }
 `

@@ -40,6 +40,9 @@ const Container = styled.div`
     padding: 20px;
     background: var(--green-300);
     border-radius: 4px;
+    @media all and (max-width: 1024px) {
+      height: 250px;
+    }
 `
 
 const Title = styled.h3`
@@ -48,6 +51,9 @@ const Title = styled.h3`
     font-weight: 700;
     line-height: 140%;
     margin-bottom: 10px;
+    @media all and (max-width: 1024px) {
+      font-size: 18px;
+    }
 `
 
 const Contents = styled.div`
@@ -60,6 +66,12 @@ const Contents = styled.div`
         font-size: 16px;
         font-weight: 500;
         line-height: 140%;
+    }
+    @media all and (max-width: 1024px) {
+      gap: 8px;
+      & > p {
+        font-size: 14px;
+      }
     }
 `
 

@@ -32,7 +32,7 @@ export default Header
 
 const Container = styled.div`
     position: fixed;
-    top: 30px;
+    top: 25px;
     left: 50%;
     z-index: 3;
     transform: translateX(-50%);
@@ -45,6 +45,11 @@ const Container = styled.div`
     padding: 10px 20px;
     border-radius: 8px;
     background: var(--green-200);
+    @media all and (max-width: 1024px) {
+      padding: 8px 12px;
+      max-width: 350px;
+      height: 48px;
+    }
 `
 
 const MenuItem = styled.button`
@@ -57,5 +62,9 @@ const MenuItem = styled.button`
     transition: all 0.3s ease;
     &:hover {
         color: var(--green-300);
+    }
+    @media all and (max-width: 1024px) {
+      font-size: 16px;
+      padding: 8px;
     }
 `

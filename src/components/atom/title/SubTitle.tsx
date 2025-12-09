@@ -15,4 +15,10 @@ const Contents = styled.div`
     font-weight: 700;
     line-height: 140%;
     letter-spacing: -0.96px;
+    @media all and (max-width: 1024px) {
+      font-size: 36px;
+    }
+    @media all and (max-width: 768px) {
+      font-size: 28px;
+    }
 `

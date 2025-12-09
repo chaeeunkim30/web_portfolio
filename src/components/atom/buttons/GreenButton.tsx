@@ -35,4 +35,7 @@ const Buttons = styled.button`
         border: 1px solid var(--green-300);
         background: var(--grey-50);
     }
+    @media all and (max-width: 1024px) {
+      padding: 8px 12px;
+    }
 `
